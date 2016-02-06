@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css"  media="screen,projection"/>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+	<title>MCPA Dayton - Members</title>
+	<link rel="icon" type="image/png" href="/img/mcpa-ico.png">
+	
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+	<script src="/js/html_includes.js"></script>
+	<script src="/js/google.js"></script>
+	<script> load_includes(); </script>
+</head>
+
+<body>
+
+	<!--Navbar-->
+	<div id="navbar"></div>
+	
+	<!--Main Container Div-->
+	<div class="container"> 
+		<div class="row">
+			<h5 class="center-align">Here you'll find the member-only content of the site.  You'll need to <a href="https://www.google.com/a/UniversalLogin?service=jotspot">login</a> to see the content below</h5>
+
+      <iframe class="col s12" src="https://calendar.google.com/calendar/embed?src=inatdnb5i96blcoa05a41c0ss4%40group.calendar.google.com&ctz=America/New_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+			<h5>Group Discussions and Announcements</h5>
+			<iframe class="col s12" id="forum_embed" src="javascript:void(0)" scrolling="no" frameborder="0" width="800" height="600"></iframe>
+			<script type="text/javascript">
+  			document.getElementById('forum_embed').src =
+     			'https://groups.google.com/a/milcyber.org/forum/embed/?place=forum/dayton'
+     			+ '&showsearch=true&showpopout=true&showtabs=false'
+     			+ '&parenturl=' + encodeURIComponent(window.location.href);
+			</script>
+			<p>Our members are also eligible for membership in our organization's <a href="https://github.com/mcpa-dayton">Github</a>.</p>
+		</div>
+	</div>
+
+	<!--Footer-->
+	<div id="footer"></div>
+
+</body>
+</html>
